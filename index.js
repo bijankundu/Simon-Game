@@ -2,14 +2,16 @@ var buttonColours = ["red","blue","green","yellow"];
 var gamePattern = [];
 var randomChosenColour,userClickedPattern=[],started = false,level = 0;
 
-$(document).keypress(function(){
+$(document).on("keypress", initialStart);
+$(".key").on("click",initialStart);
+function initialStart(){
   if(!started)
   {
     $("#level-title").text("level " + level);
     nextSequence();
     started = true;
   }
-});
+}
 
 function checkAnswer(currentLevel) {
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
@@ -44,7 +46,7 @@ function nextSequence()
   playSound('sounds/' + randomChosenColour + '.mp3');
 }
 
-$(".btn").on("click",function(){
+$(".but").on("click",function(){
   var userChosenColour = event.target.id;
   userClickedPattern.push(userChosenColour);
   playSound('sounds/' + userChosenColour + '.mp3');

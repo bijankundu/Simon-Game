@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Simon</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
@@ -11,30 +12,31 @@
 <body>
   <h1 id="level-title">Press A Key to Start</h1>
   <div class="container">
-    <div lass="row">
+    <div class="row">
 
-      <div type="button" id="green" class="btn green">
+      <div type="button" id="green" class="but col green">
 
       </div>
 
-      <div type="button" id="red" class="btn red">
+      <div type="button" id="red" class="but col red">
 
       </div>
     </div>
 
     <div class="row">
 
-      <div type="button" id="yellow" class="btn yellow">
+      <div type="button" id="yellow" class="but col yellow">
 
       </div>
-      <div type="button" id="blue" class="btn blue">
+      <div type="button" id="blue" class="but col blue">
 
       </div>
 
     </div>
 
   </div>
-  <a href="https://en.wikipedia.org/wiki/Simon_(game)" target="_blank">Click here to read about this game.</a>
+  <a href="https://en.wikipedia.org/wiki/Simon_(game)" target="_blank"><u>Click here to read about this game.</u></a>
+ <button type="button" class="btn btn-light key" name="button">To simulate a key press, click on this button.</button>
  <footer>&copy Bijan Kundu 2019</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
