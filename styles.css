@@ -50,7 +50,8 @@ footer{
 
 .btn{
   border: 0.325rem solid black;
-  margin-top: 5%;
+  position: relative;
+  margin: 5%;
 }
 
 .game-over {
