@@ -9,8 +9,21 @@ a{
   display: block;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
 footer{
-   color: #FEF2BF;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  color: #FEF2BF;
 }
 
 #level-title {
@@ -30,12 +43,12 @@ footer{
   margin: 25px;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
+  border: 0.625rem solid black;
   border-radius: 20%;
 }
 
 .btn{
-  border: 5px solid black; 
+  border: 0.325rem solid black;
 }
 
 .game-over {
