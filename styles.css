@@ -7,7 +7,7 @@ a{
   font-size: 1.7rem;
   color: white;
   display: block;
-  padding-bottom: 3rem;
+  margin-bottom: 10%;
 }
 
 #page-container {
@@ -50,6 +50,7 @@ footer{
 
 .btn{
   border: 0.325rem solid black;
+  margin-top: 5%;
 }
 
 .game-over {
